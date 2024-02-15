@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .sectiondois{
+    transform: translateY(240px);
+}
+.categorias{
+    display: flex;
+    justify-content:center;
+    padding:65px;
+    align-items: center;
+    color:#1c4303;
+}
+#titulo{
+    font-size: 32px;
+}
+#veja{
+    font-size: 22px;
+}
+hr{
+    color:#1c4303;
+    font-weight: bold;
+    border: 2px solid #1c4303;
+    position: relative;
+    top:-100px;
+    width: 1300px;
+}
+.produtos-blocos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px; 
+
+}
+#blocos{
+    display: block; 
+    width:280px;
+    height:450px;
+    border:2px solid #1c4303;  
+    border-radius:20px; 
+    position: relative;
+    margin: 10px;
+    margin-top:90px; 
+    translate:40px  -80px;
+}
+#img-produto{
+    width:240px;
+    height:240px;
+    margin-top:10px;
+    margin-left:25px;
+}
+#nome-produto{
+    font-size: 20px;
+    margin-left:7px;
+}
+#preço-desconto{
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#388504;
+    font-weight: bold;
+    margin-left:7px;
+    width:110px;
+    text-align: left;
+}
+#preço{
+    text-align: right;
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#388504;
+    font-weight: bold;
+    margin-top:-50px;
+    margin-right:27px; 
+   
+}
+.ativo-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transform: translateY(-30px); 
+}
+.comprar{
+    width: 200px;
+    height:40px;
+    background-color: #388504;
+    font-size: 22px;
+    border:2px solid #1c4303;
+    border-right:none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.comprar:hover{
+    background-color: #1c4303;
+}
+.carrinho{
+    height:40px;
+    background-color: #1c4303;
+    border:2px solid #1c4303;
+    cursor: pointer;
+}
+.carrinho:hover{
+    background-color: #388504;
+    border: 2px solid #388504;
+    border-left:2px solid #1c4303;
+}
+#config-carrinho{
+    height: 25px;
+    padding: 4px;
+}
+.folder-produto{
+  display: none;
+}
+.ativar-folder-produto{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 2000px;
+    width: 80%;
+    transform: translateY(-800px) translateX(150px);
+    transition: 2s;
+    position: absolute;
+    border-radius:40px;
+    box-shadow: 4px 45px 45px 4px;
+    transition: .5s;
+}
+.fundo-direito{
+    display: flex;
+    justify-content:left;
+    padding:95px;
+}
+#img-principal{
+    padding: 45px;
+    height: 450px;
+    width: 500px;
+}
+
+
+    </style>
+
+<article class="produtos">
+
+    <div class="categorias">
+        <p id="titulo">Ração</p>
+    </div>
+    <hr>
+
+    <div class="produtos-blocos">
+
+     <div id="blocos">
+        <img src="banner/img1.png" id="img-produto">
+        <p id="nome-produto">Ração Betlife para  Cachorro  15,0 kg</p>
+        <p id="preço-desconto">30% de Desconto</p>
+        <p id="preço">R$29<sup>,90</sup></p>
+        <div class="ativo-menu">
+        <button class="comprar">Comprar</button>
+        <button class="carrinho"><img src="Vetor/compra.png" alt="" id="config-carrinho"></button>
+        </div>
+     </div> 
+</article>
+
+<section class="folder-produto">
+
+    <article class="fundo-direito">
+        <img src="banner/img1.png" id="img-principal">
+        
+    </article>
+</section>
+
+<script>
+    const fundo = document.querySelector(".folder-produto")
+    const carro1 = document.querySelector(".comprar");
+
+    carro1.addEventListener("click", () =>{
+        fundo.classList.add("ativar-folder-produto")
+    })
+
+
+</script>
+    
+</body>
+</html>

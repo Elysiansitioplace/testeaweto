@@ -1,0 +1,195 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+.texto-anuncio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #d0dd97;
+    color:#1c4303;
+    font-weight: bold;
+    width: 100%; 
+    height: 40px;
+ }
+#texto-promo{
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+}
+header{
+    background-color: #388504;
+    height:110px;
+    width: 100%;
+}
+.sistema-mobile{
+    padding: 10px;
+    z-index: 1;
+    height:110px;
+    width: 100%;
+    background-color: #388504;
+
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    margin:0;
+}
+#logo{
+    transform: scale(0.7) ;  
+}
+#menu{
+    transform: scale(0.4) translateX(20px);
+    margin-left: 20px;
+}
+#compras{
+    transform: scale(0.4) translateX(180px);
+
+}
+
+.fundo{
+    height:45px;
+    width: 45px;
+    margin-left:10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color:white;
+    transition: .2s;
+    transform: translateY(18px) translateX(100px) ;
+
+}
+.fundo:hover{
+    background-color: #1c4303;
+    border:2px solid white;
+    border-radius:20px;
+    padding:4px;
+
+}
+.fundo.abrir{
+    width:210px;
+    background-color: #1c4303;
+    margin-left:-200px;
+    border:2px solid white;
+    transform: translateY(9px) translateX(100px);
+    border-radius: 20px;
+    padding:5px;
+}
+
+.lupa {
+    font-size: 30px;
+    padding:8px;
+    cursor: pointer;
+   
+}
+.fechar{
+    font-size: 20px;
+    cursor: pointer;
+    translate: -82px;
+}
+.pesquisa , input{
+    background-color: transparent;
+    border:0;
+    outline: 0;
+    font-size: 17px;
+    width:calc(100% 110px);
+    color:white;
+}
+.marcas{
+    background-color: #d0dd97;
+    color: #1c4303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 100%;
+}
+
+#imagem-marca{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+#img-marcas{
+
+    width: 100%;
+    height: 70px;
+    width: 70px;
+}
+.pesquisadois{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height:100px;
+    color:white;
+    background-color: #1c4303;
+}
+#pesquisadois{
+    border:2px solid white;
+    font-size:18px;
+    border-radius: 20px;
+    color:white;
+    padding: 13px;
+    font-weight: bold;
+    width:200px;
+    height: 10px;
+    background-color:transparent;
+}
+/*CATEGORIA*/
+.fundo-categoria{
+    display: flex;
+    justify-content: space-between;
+}
+.botao-catalogo , #botao-catalogo{
+    margin-top:25px;
+    padding:5px;
+    height: 35px;
+    width: 35px;
+    border: 0;
+    background-color: transparent;
+}
+.categoria{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 270px;
+    overflow: hidden;
+    margin-left:-0px;
+    margin-top:20px;
+}
+#imgcatalogo{
+    height: 100px;
+    width: 100px;
+    margin-left:40px;
+}
+#imgcatalogo:hover{
+    margin-top:15px;
+    transform: scale(1.1);
+}
+
+
+/*
+
+
+
+
+
+
+
+
+  */
+  

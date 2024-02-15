@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+        .carrossel{
+            overflow: hidden;
+            height: 300px;
+            width:250px;
+            margin-top:200px;
+                          
+        }
+        .container{
+            display: flex;
+            transition: 0.7s ease-in-out ;
+            transform: translateX(0);    
+        }
+        img{
+            height: 280px;
+            width: 280px;
+            margin:15px;
+        }
+
+    </style>
+    <div class="carrossel">
+        <div class="container">
+            <img src="banner/cat1.png" class="imgcatalogo">
+            <img src="banner/cat2.png" class="imgcatalogo">
+            <img src="banner/cat4.png" class="imgcatalogo">
+            <img src="banner/cat3.png" class="imgcatalogo">
+        </div>
+    </div>
+    <script>
+        //constante com o container 
+        const box = document.querySelector(".container")
+
+        //constante com o container e imagens
+        const imagens = document.querySelector(".container .imgcatalogo")
+        setInterval(box ,2000)
+
+        //let para contagem
+        let contador = 0; 
+        //toda vez que eu utilizar uma função, o meu contador vai contar dois numeros
+        function slider(){
+            contador++;
+        }
+        //acesso para repetir em um intervalo de tempo ( setInterval(funçao,tempo))
+        setInterval( slider,2000)
+        //o contador vai repetir por segundos a ação efetuada
+        </script> 
+
+
+<script>
+
+    // Sistema de Repetição com java script
+    /*
+    function silder(){
+        alguma caracteristica de modificação
+    }
+    setInterval(função , Tempo)
+    */
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!--bANNER 2-->
+<article class="banner-numero2">
+    <img src="banner/banner3.jpg" height="600px" id="numero3">
+</article>
+
+<footer>
+    <article class="fundo-redes">
+        <img src="imagens/whats.png" id="whatssap">
+        <img src="imagens/insta.png" id="instagram">
+        <img src="imagens/face.png" id="facebook">
+    </article>
+
+    <article class="final">
+        <div class="parte1">
+        <h2>FALE CONOSCO :</h2>
+        <p>(11) 99999-9999</p>
+        <p>emailemail@email.com</p>
+        </div>
+        <div class="parte2">
+        <h2>ATENDIMENTO :</h2>
+        <p>Segunda a sexta das 08 até as 18 horas.<br><br><br>
+        Trabalhos com atendimento nas redes Sociais Vizinhas
+        </p>
+        </div>
+
+        <div class="parte3">
+            <p>Copyright © 2024 Parada Pet, todos os direitos reservados. Parada Pet  Brasileira Pet Shop. Inscrição estadual 
+                nº : 0000  CNPJ/MF sob o nº: 00000 . Endereço: rua site parada pet , 025 
+                CEP 00000-00, São Paulo</p>
+        </div>
+
+
+
+    </article>
+    
+</footer>
+
+
+
+
+css
+/*BLOCOS DOS PRODUTOS*/
+.sectiondois{
+transform: translateY(500px);
+}
+
+.categorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:65px;
+    color:#1c4303;
+    transform: translateY(-350px);
+    width: 100%;
+}
+
+#titulo{
+    font-size: 32px;
+}
+
+#veja{
+    font-size: 22px;
+}
+
+hr{
+    color:#1c4303;
+    font-weight: bold;
+    border: 2px solid #1c4303;
+    position: relative;
+    top:-100px;
+    width: 1300px;
+    transform: translateY(-350px);
+}
+
+.produtos-blocos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px; 
+}
+
+#blocos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    width:280px;
+    height:450px;
+    border:2px solid #1c4303;  
+    border-radius:20px; 
+    position: relative;
+    margin: 10px;
+    margin-top:90px; 
+    translate:0px  -450px;
+}
+#img-produto{
+    width:240px;
+    height:240px;
+    margin-top:10px;
+    margin-left:25px;
+}
+#nome-produto{
+    font-size: 20px;
+    margin-left:7px;
+}
+#preço-desconto{
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#388504;
+    font-weight: bold;
+    margin-left:7px;
+    width:110px;
+    text-align: left;
+}
+#preço{
+    text-align: right;
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#388504;
+    font-weight: bold;
+    margin-top:-50px;
+    margin-right:27px; 
+}
+.ativo-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transform: translateY(-30px); 
+}
+.comprar{
+    width: 200px;
+    height:40px;
+    background-color: #388504;
+    font-size: 22px;
+    border:2px solid #1c4303;
+    border-right:none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.comprar:hover{
+    background-color: #1c4303;
+}
+.carrinho{
+    height:40px;
+    background-color: #1c4303;
+    border:2px solid #1c4303;
+    cursor: pointer;
+}
+.carrinho:hover{
+    background-color: #388504;
+    border: 2px solid #388504;
+    border-left:2px solid #1c4303;
+}
+#config-carrinho{
+    height: 25px;
+    padding: 4px;
+}
+/*BLOCO VEJA MAIS*/
+.veja-mais{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color:#388504;
+    width: 120px;
+    height:40px;
+    color: white;
+    transform: translateX(600px);
+    padding:5px;
+    text-align: center;
+}
+/*BLOCO BANNER 2*/
+.banner-numero2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(590px);
+}
+#numero3{
+    height: 500px;
+    width: 100%;
+}
+
+/*BLOCO VEJA MAIS*/
+.fundo-redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px;
+
+    transform: translateY(650px);
+    background-color: #d0dd97;
+    padding:5px;
+}
+#whatssap, #instagram , #facebook{
+    height:50px;
+    cursor:pointer;
+}
+#whatssap:hover{
+    transform: scale(1.1);
+}
+#instagram:hover{
+    transform: scale(1.1);
+}
+#facebook:hover{
+    transform: scale(1.1);
+}
+
+.final{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 400px;
+    background-color: #0f1e00;
+    transform: translateY(650px);
+    padding:30px;
+    color:white;
+    font-size:18px;
+}
+.parte1{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+.parte2{
+    display: flex;
+    flex-direction: column;
+
+}
+.parte3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    margin-left:400px;
+}
+
+
+
+
+
+
