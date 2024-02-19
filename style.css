@@ -13,6 +13,10 @@ body{
 #nav-icone-menu,.fundo-menu,.caminho-mobile,.fundo-carrinhomob,.clique-carromob,#carrinho-fecharmob{
     display: none;
 }
+a{
+
+    text-decoration: none;
+}
 /*
 
 CABEÇALHO
@@ -659,6 +663,72 @@ hr{
 .fundo-veja:hover{
     background-color: #0c212d;
 }
+.fundo-bannerdois{
+    display: flex;
+    align-items: center;
+    transform: translateY(5px) translateX(-20px);
+    height: 300px;
+    width: 100%;
+    margin: 20px;
 
+}
+.banner-dois{
+    height: 300px;
+    width: 100%;
+}
+
+footer{
+  
+    transform: translateY(800px);
+    background-color: #02141c;
+    width: 100%;
+    height: 680px;
+    color: white;
+    font-size: 18px;
+}
+
+.fundo-texto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 110%;
+    transform: translateY(40px) 
+}
+.infor-final{
+
+    width: 30%;
+    height: 100px;
+    padding: 10px;
+    margin: 60px;
+    text-align: left;
+    
+}
+.mod-final{
+    transform: translateY(80px);
+    width: 60%;
+    height: 100px;
+    padding: 10px;
+    margin: 60px;
+    text-align: center;
+  
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    background-color:#0c212d;
+}
+.imagem-redes{
+    height: 50px;
+    width: 210px;
+}
+.logo-redes{
+    margin-top: 9px;
+    padding: 2px;
+    height: 40px;
+    width: 40px;
+}
 
 
